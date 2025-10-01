@@ -26,13 +26,13 @@ export const fontWeights = {
 
 export const typography = {
   hero: {
-    desktop: { fontSize: 80, lineHeight: 88, fontWeight: fontWeights.bold, letterSpacing: -2 },
+    desktop: { fontSize: 72, lineHeight: 88, fontWeight: fontWeights.bold, letterSpacing: -2 },
     laptop: { fontSize: 64, lineHeight: 72, fontWeight: fontWeights.bold, letterSpacing: -1 },
     tablet: { fontSize: 40, lineHeight: 56, fontWeight: fontWeights.bold, letterSpacing: -1 },
     mobile: { fontSize: 32, lineHeight: 40, fontWeight: fontWeights.bold, letterSpacing: 0 },
   },
   head: {
-    desktop: { fontSize: 64, lineHeight: 72, fontWeight: fontWeights.bold, letterSpacing: -1 },
+    desktop: { fontSize: 56, lineHeight: 72, fontWeight: fontWeights.bold, letterSpacing: -1 },
     laptop: { fontSize: 40, lineHeight: 56, fontWeight: fontWeights.bold, letterSpacing: -1 },
     tablet: { fontSize: 32, lineHeight: 40, fontWeight: fontWeights.bold, letterSpacing: 0 },
     mobile: { fontSize: 28, lineHeight: 36, fontWeight: fontWeights.bold, letterSpacing: 0 },

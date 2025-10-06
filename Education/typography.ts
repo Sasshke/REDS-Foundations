@@ -50,7 +50,7 @@ export const typography = {
   bodyMedium: { fontSize: 14, lineHeight: 20, fontWeight: fontWeights.regular, letterSpacing: 0 },
   bodySmall: { fontSize: 12, lineHeight: 16, fontWeight: fontWeights.regular, letterSpacing: 0 },
   description: { fontSize: 10, lineHeight: 12, fontWeight: fontWeights.regular, letterSpacing: 0 },
-  legal: { fontSize: 8, lineHeight: 10, fontWeight: fontWeights.regular, letterSpacing: -0.5 },
+  legal: { fontSize: 8, lineHeight: 10, fontWeight: fontWeights.regular, letterSpacing: -0.25 },
 
   // Типографика для кнопок
   button: {

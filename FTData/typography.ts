@@ -34,7 +34,7 @@ export const typography = {
   head: {
     desktop: { fontSize: 56, lineHeight: 72, fontWeight: fontWeights.bold, letterSpacing: -1 },
     laptop: { fontSize: 40, lineHeight: 56, fontWeight: fontWeights.bold, letterSpacing: -1 },
-    tablet: { fontSize: 32, lineHeight: 40, fontWeight: fontWeights.bold, letterSpacing: 0 },
+    tablet: { fontSize: 32, lineHeight: 40, fontWeight: fontWeights.bold, letterSpacing: -0.5 },
     mobile: { fontSize: 24, lineHeight: 32, fontWeight: fontWeights.bold, letterSpacing: 0 },
   },
   subhead: {

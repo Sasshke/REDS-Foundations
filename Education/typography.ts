@@ -29,13 +29,13 @@ export const typography = {
     desktop: { fontSize: 64, lineHeight: 72, fontWeight: fontWeights.bold, letterSpacing: -2 },
     laptop: { fontSize: 44, lineHeight: 56, fontWeight: fontWeights.bold, letterSpacing: -1 },
     tablet: { fontSize: 36, lineHeight: 48, fontWeight: fontWeights.bold, letterSpacing: -1 },
-    mobile: { fontSize: 28, lineHeight: 36, fontWeight: fontWeights.bold, letterSpacing: 0 },
+    mobile: { fontSize: 28, lineHeight: 36, fontWeight: fontWeights.bold, letterSpacing: -0.5 },
   },
   head: {
     desktop: { fontSize: 44, lineHeight: 56, fontWeight: fontWeights.bold, letterSpacing: -1 },
     laptop: { fontSize: 36, lineHeight: 48, fontWeight: fontWeights.bold, letterSpacing: -1 },
-    tablet: { fontSize: 32, lineHeight: 40, fontWeight: fontWeights.bold, letterSpacing: -0.5 },
-    mobile: { fontSize: 24, lineHeight: 32, fontWeight: fontWeights.bold, letterSpacing: 0 },
+    tablet: { fontSize: 32, lineHeight: 40, fontWeight: fontWeights.bold, letterSpacing: -0.75 },
+    mobile: { fontSize: 24, lineHeight: 32, fontWeight: fontWeights.bold, letterSpacing: -0.5 },
   },
   subhead: {
     desktop: { fontSize: 32, lineHeight: 40, fontWeight: fontWeights.bold, letterSpacing: 0 },

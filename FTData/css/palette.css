@@ -1,0 +1,195 @@
+/**
+ * palette.css — базовая тональная палитра цветов
+ * 
+ * Не применяется напрямую к интерфейсу. Служит справочным слоем примитивных оттенков для семантической темы.
+ * 
+ * - 0 — самый светлый оттенок
+ * - 50 — базовый цвет
+ * - 100 — самый темный оттенок
+ */
+
+:root {
+  /* Purple */
+  --palette-purple-0: #f6f5ff;
+  --palette-purple-5: #ebe9f8;
+  --palette-purple-10: #e1dff6;
+  --palette-purple-15: #cdc7f6;
+  --palette-purple-20: #bdb3f7;
+  --palette-purple-25: #ae9ff7;
+  --palette-purple-30: #9f8afa;
+  --palette-purple-35: #9274f8;
+  --palette-purple-40: #7f57ed;
+  --palette-purple-45: #713de3;
+  --palette-purple-50: #652dd2;
+  --palette-purple-55: #5b26be;
+  --palette-purple-60: #4e1ca8;
+  --palette-purple-65: #3e0d8b;
+  --palette-purple-70: #2e066b;
+  --palette-purple-75: #220b50;
+  --palette-purple-80: #180a39;
+  --palette-purple-85: #0e0624;
+  --palette-purple-90: #060313;
+  --palette-purple-95: #04010f;
+  --palette-purple-100: #02000a;
+
+  /* Indigo */
+  --palette-indigo-0: #f4f6ff;
+  --palette-indigo-5: #e8eaf9;
+  --palette-indigo-10: #d9ddf5;
+  --palette-indigo-15: #c3caf9;
+  --palette-indigo-20: #b0b9f1;
+  --palette-indigo-25: #9fa8ea;
+  --palette-indigo-30: #8f98df;
+  --palette-indigo-35: #7f88d1;
+  --palette-indigo-40: #6b72c0;
+  --palette-indigo-45: #5b60b1;
+  --palette-indigo-50: #5355a8;
+  --palette-indigo-55: #4b4da3;
+  --palette-indigo-60: #45469f;
+  --palette-indigo-65: #3a3990;
+  --palette-indigo-70: #2b267c;
+  --palette-indigo-75: #201866;
+  --palette-indigo-80: #181053;
+  --palette-indigo-85: #110d3a;
+  --palette-indigo-90: #02021e;
+  --palette-indigo-95: #010019;
+  --palette-indigo-100: #010010;
+
+  /* Blue */
+  --palette-blue-0: #f3f6fd;
+  --palette-blue-5: #e5ebfd;
+  --palette-blue-10: #d2ddfd;
+  --palette-blue-15: #bdccf9;
+  --palette-blue-20: #a6bbfc;
+  --palette-blue-25: #90a9fd;
+  --palette-blue-30: #7d98f8;
+  --palette-blue-35: #6b86f0;
+  --palette-blue-40: #5770db;
+  --palette-blue-45: #485fc8;
+  --palette-blue-50: #3d52b6;
+  --palette-blue-55: #3649a5;
+  --palette-blue-60: #2d3d92;
+  --palette-blue-65: #212e77;
+  --palette-blue-70: #17215c;
+  --palette-blue-75: #111a47;
+  --palette-blue-80: #091235;
+  --palette-blue-85: #050928;
+  --palette-blue-90: #02021e;
+  --palette-blue-95: #010019;
+  --palette-blue-100: #010010;
+
+  /* Green */
+  --palette-green-0: #ecfaf0;
+  --palette-green-5: #cff3da;
+  --palette-green-10: #9de7b7;
+  --palette-green-15: #89e6b0;
+  --palette-green-20: #70e1a4;
+  --palette-green-25: #64d89b;
+  --palette-green-30: #58cf8f;
+  --palette-green-35: #3ecb7f;
+  --palette-green-40: #30bb6f;
+  --palette-green-45: #279b5c;
+  --palette-green-50: #268751;
+  --palette-green-55: #2e754b;
+  --palette-green-60: #215335;
+  --palette-green-65: #134227;
+  --palette-green-70: #09311b;
+  --palette-green-75: #0b2515;
+  --palette-green-80: #071b0f;
+  --palette-green-85: #051008;
+  --palette-green-90: #030704;
+  --palette-green-95: #010402;
+  --palette-green-100: #000201;
+
+  /* Red */
+  --palette-red-0: #fff3f2;
+  --palette-red-5: #fce5e3;
+  --palette-red-10: #fbd3d0;
+  --palette-red-15: #fbbbb7;
+  --palette-red-20: #faa39e;
+  --palette-red-25: #f88985;
+  --palette-red-30: #f66c6a;
+  --palette-red-35: #f14d51;
+  --palette-red-40: #dd2537;
+  --palette-red-45: #c80027;
+  --palette-red-50: #b00823;
+  --palette-red-55: #991b25;
+  --palette-red-60: #7f2024;
+  --palette-red-65: #621d1e;
+  --palette-red-70: #471616;
+  --palette-red-75: #321615;
+  --palette-red-80: #22100f;
+  --palette-red-85: #170908;
+  --palette-red-90: #0d0303;
+  --palette-red-95: #090101;
+  --palette-red-100: #050000;
+
+  /* Orange */
+  --palette-orange-0: #fff4eb;
+  --palette-orange-5: #fde6da;
+  --palette-orange-10: #fdd5bd;
+  --palette-orange-15: #fbbf9b;
+  --palette-orange-20: #ffa56c;
+  --palette-orange-25: #fa9d52;
+  --palette-orange-30: #ec9241;
+  --palette-orange-35: #eb8b1e;
+  --palette-orange-40: #e0820f;
+  --palette-orange-45: #c8770f;
+  --palette-orange-50: #af6a18;
+  --palette-orange-55: #95580e;
+  --palette-orange-60: #7d480d;
+  --palette-orange-65: #532d05;
+  --palette-orange-70: #411f00;
+  --palette-orange-75: #341600;
+  --palette-orange-80: #270e00;
+  --palette-orange-85: #170903;
+  --palette-orange-90: #0d0401;
+  --palette-orange-95: #080200;
+  --palette-orange-100: #050100;
+
+  /* Yellow */
+  --palette-yellow-0: #fcfed4;
+  --palette-yellow-5: #f8f5bf;
+  --palette-yellow-10: #f7edaf;
+  --palette-yellow-15: #f7e59b;
+  --palette-yellow-20: #f5dd8b;
+  --palette-yellow-25: #f3d57b;
+  --palette-yellow-30: #ebc75e;
+  --palette-yellow-35: #e3b83a;
+  --palette-yellow-40: #d6a700;
+  --palette-yellow-45: #c59700;
+  --palette-yellow-50: #b38800;
+  --palette-yellow-55: #a1790c;
+  --palette-yellow-60: #906b17;
+  --palette-yellow-65: #77581c;
+  --palette-yellow-70: #5c4215;
+  --palette-yellow-75: #432f0e;
+  --palette-yellow-80: #2a1c07;
+  --palette-yellow-85: #1d1409;
+  --palette-yellow-90: #140b03;
+  --palette-yellow-95: #0b0400;
+  --palette-yellow-100: #030100;
+
+  /* Neutral */
+  --palette-neutral-0: #ffffff;
+  --palette-neutral-5: #f9f9fb;
+  --palette-neutral-10: #f3f4f6;
+  --palette-neutral-15: #eeeef2;
+  --palette-neutral-20: #e9e9ec;
+  --palette-neutral-25: #e3e4e8;
+  --palette-neutral-30: #dadadd;
+  --palette-neutral-35: #b3b5bc;
+  --palette-neutral-40: #868998;
+  --palette-neutral-45: #6c7288;
+  --palette-neutral-50: #575c75;
+  --palette-neutral-55: #45495f;
+  --palette-neutral-60: #333747;
+  --palette-neutral-65: #222430;
+  --palette-neutral-70: #191b24;
+  --palette-neutral-75: #14161f;
+  --palette-neutral-80: #0f101a;
+  --palette-neutral-85: #090b16;
+  --palette-neutral-90: #04050f;
+  --palette-neutral-95: #02030b;
+  --palette-neutral-100: #010107;
+}

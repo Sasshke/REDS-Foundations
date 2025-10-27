@@ -1,0 +1,352 @@
+/**
+ * colors_withoutmap.css — семантические CSS-переменные для дизайн-системы 
+ * Без color-mix, прямые hex/rgbaзначения
+ * 
+ * Базируется на структуре colors.ts
+ * Поддерживает светлую и темную темы через data-theme атрибут
+ * 
+
+ */
+
+/* ===== СВЕТЛАЯ ТЕМА (по умолчанию) ===== */
+:root,
+[data-theme='light'] {
+  /* Базовые цвета контента (foreground) */
+  --fg-primary: #0f101a;
+  --fg-secondary: #222430;
+  --fg-tertiary: #6c7288;
+  --fg-disabled: rgba(15, 16, 26, 0.4); /* neutral-80 с opacity-tertiary (0.4) */
+  --fg-muted: rgba(15, 16, 26, 0.12); /* neutral-80 с opacity-muted (0.12) */
+  --fg-ghosty: rgba(15, 16, 26, 0.06); /* neutral-80 с opacity-ghosty (0.06) */
+
+  /* Базовые фоны (background) */
+  --bg-low: #eeeef2;
+  --bg-mid: #f3f4f6;
+  --bg-high: #f9f9fb;
+  --bg-disabled: rgba(87, 92, 117, 0.12); /* neutral-50 с opacity-muted (0.12) */
+  --bg-muted: rgba(238, 238, 242, 0.12); /* neutral-15 с opacity-muted (0.12) */
+  --bg-ghosty: rgba(238, 238, 242, 0.06); /* neutral-15 с opacity-ghosty (0.06) */
+
+  /* Поверхности (surface) */
+  --surface-lowest: #e9e9ec;
+  --surface-low: #eeeef2;
+  --surface-mid: #f3f4f6;
+  --surface-high: #f9f9fb;
+  --surface-highest: #ffffff;
+
+  /* Lead (брендовые цвета) */
+  --accent-lead-enabled: #5355a8;
+  --accent-lead-hover: #5b60b1;
+  --accent-lead-active: #6b72c0;
+  --accent-lead-contrast: #e8eaf9;
+  --accent-lead-alt: #b0b9f1;
+
+  --accent-lead-surface-enabled: #f4f6ff;
+  --accent-lead-surface-hover: #e8eaf9;
+  --accent-lead-surface-active: #d9ddf5;
+  --accent-lead-surface-contrast: #5355a8;
+  --accent-lead-surface-alt: #8f98df;
+
+  --accent-lead-container-enabled: #d9ddf5;
+  --accent-lead-container-hover: #c3caf9;
+  --accent-lead-container-active: #b0b9f1;
+  --accent-lead-container-contrast: #45469f;
+  --accent-lead-container-alt: #6b72c0;
+
+  /* Success */
+  --accent-success-enabled: #268751;
+  --accent-success-hover: #279b5c;
+  --accent-success-active: #30bb6f;
+  --accent-success-contrast: #cff3da;
+  --accent-success-alt: #70e1a4;
+
+  --accent-success-surface-enabled: #ecfaf0;
+  --accent-success-surface-hover: #cff3da;
+  --accent-success-surface-active: #9de7b7;
+  --accent-success-surface-contrast: #268751;
+  --accent-success-surface-alt: #58cf8f;
+
+  --accent-success-container-enabled: #9de7b7;
+  --accent-success-container-hover: #89e6b0;
+  --accent-success-container-active: #70e1a4;
+  --accent-success-container-contrast: #215335;
+  --accent-success-container-alt: #30bb6f;
+
+  /* Info */
+  --accent-info-enabled: #3d52b6;
+  --accent-info-hover: #485fc8;
+  --accent-info-active: #5770db;
+  --accent-info-contrast: #e5ebfd;
+  --accent-info-alt: #a6bbfc;
+
+  --accent-info-surface-enabled: #f3f6fd;
+  --accent-info-surface-hover: #e5ebfd;
+  --accent-info-surface-active: #d2ddfd;
+  --accent-info-surface-contrast: #3d52b6;
+  --accent-info-surface-alt: #7d98f8;
+
+  --accent-info-container-enabled: #d2ddfd;
+  --accent-info-container-hover: #bdccf9;
+  --accent-info-container-active: #a6bbfc;
+  --accent-info-container-contrast: #2d3d92;
+  --accent-info-container-alt: #5770db;
+
+  /* Warning */
+  --accent-warning-enabled: #af6a18;
+  --accent-warning-hover: #c8770f;
+  --accent-warning-active: #e0820f;
+  --accent-warning-contrast: #fde6da;
+  --accent-warning-alt: #ffa56c;
+
+  --accent-warning-surface-enabled: #fff4eb;
+  --accent-warning-surface-hover: #fde6da;
+  --accent-warning-surface-active: #fdd5bd;
+  --accent-warning-surface-contrast: #af6a18;
+  --accent-warning-surface-alt: #ec9241;
+
+  --accent-warning-container-enabled: #fdd5bd;
+  --accent-warning-container-hover: #fbbf9b;
+  --accent-warning-container-active: #ffa56c;
+  --accent-warning-container-contrast: #7d480d;
+  --accent-warning-container-alt: #e0820f;
+
+  /* Error */
+  --accent-error-enabled: #b00823;
+  --accent-error-hover: #c80027;
+  --accent-error-active: #dd2537;
+  --accent-error-contrast: #fce5e3;
+  --accent-error-alt: #faa39e;
+
+  --accent-error-surface-enabled: #fff3f2;
+  --accent-error-surface-hover: #fce5e3;
+  --accent-error-surface-active: #fbd3d0;
+  --accent-error-surface-contrast: #b00823;
+  --accent-error-surface-alt: #f66c6a;
+
+  --accent-error-container-enabled: #fbd3d0;
+  --accent-error-container-hover: #fbbbb7;
+  --accent-error-container-active: #faa39e;
+  --accent-error-container-contrast: #7f2024;
+  --accent-error-container-alt: #dd2537;
+
+  /* Neutral */
+  --accent-neutral-enabled: #0f101a;
+  --accent-neutral-hover: #222430;
+  --accent-neutral-active: #575c75;
+  --accent-neutral-contrast: #f9f9fb;
+  --accent-neutral-alt: #e9e9ec;
+
+  --accent-neutral-surface-enabled: #f9f9fb;
+  --accent-neutral-surface-hover: #f3f4f6;
+  --accent-neutral-surface-active: #eeeef2;
+  --accent-neutral-surface-contrast: #0f101a;
+  --accent-neutral-surface-alt: #dadadd;
+
+  --accent-neutral-container-enabled: #f3f4f6;
+  --accent-neutral-container-hover: #eeeef2;
+  --accent-neutral-container-active: #e9e9ec;
+  --accent-neutral-container-contrast: #0f101a;
+  --accent-neutral-container-alt: #868998;
+
+  /* Тени */
+  --shadow-base: rgba(0, 0, 0, 0.16);
+  --shadow-blur: rgba(0, 0, 0, 0.08);
+  --shadow-lowest: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+  --shadow-low: 0 4px 16px 0 rgba(0, 0, 0, 0.08), 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+  --shadow-mid: 0 12px 48px 0 rgba(0, 0, 0, 0.08), 2px 4px 12px 0 rgba(0, 0, 0, 0.16);
+  --shadow-high: 0 20px 64px 0 rgba(0, 0, 0, 0.08), 2px 8px 20px 0 rgba(0, 0, 0, 0.16);
+  --shadow-highest: 0 32px 96px 0 rgba(0, 0, 0, 0.08), 4px 16px 32px 0 rgba(0, 0, 0, 0.16);
+
+  /* Оверлеи */
+  --overlay-primary: rgba(0, 0, 0, 0.6);
+  --overlay-secondary: rgba(0, 0, 0, 0.4);
+  --overlay-blur: rgba(0, 0, 0, 0.2);
+
+  /* Утилитарные цвета */
+  --transparent: transparent;
+  --light: #ffffff;
+  --dark: #010107;
+  --image-fill: #1c1c4a;
+}
+
+/* ===== ТЕМНАЯ ТЕМА ===== */
+[data-theme='dark'] {
+  /* Базовые цвета контента (foreground) */
+  --fg-primary: #f9f9fb;
+  --fg-secondary: #dadadd;
+  --fg-tertiary: #575c75;
+  --fg-disabled: rgba(249, 249, 251, 0.4); /* neutral-5 с opacity-tertiary (0.4) */
+  --fg-muted: rgba(249, 249, 251, 0.12); /* neutral-5 с opacity-muted (0.12) */
+  --fg-ghosty: rgba(249, 249, 251, 0.06); /* neutral-5 с opacity-ghosty (0.06) */
+
+  /* Базовые фоны (background) */
+  --bg-low: #0f101a;
+  --bg-mid: #14161f;
+  --bg-high: #191b24;
+  --bg-disabled: rgba(87, 92, 117, 0.12); /* neutral-50 с opacity-muted (0.12) */
+  --bg-muted: rgba(15, 16, 26, 0.12); /* neutral-80 с opacity-muted (0.12) */
+  --bg-ghosty: rgba(15, 16, 26, 0.06); /* neutral-80 с opacity-ghosty (0.06) */
+
+  /* Поверхности (surface) */
+  --surface-lowest: #090b16;
+  --surface-low: #0f101a;
+  --surface-mid: #14161f;
+  --surface-high: #191b24;
+  --surface-highest: #222430;
+
+  /* Lead (брендовые цвета) */
+  --accent-lead-enabled: #7f88d1;
+  --accent-lead-hover: #6b72c0;
+  --accent-lead-active: #5b60b1;
+  --accent-lead-contrast: #181053;
+  --accent-lead-alt: #45469f;
+
+  --accent-lead-surface-enabled: #201866;
+  --accent-lead-surface-hover: #2b267c;
+  --accent-lead-surface-active: #3a3990;
+  --accent-lead-surface-contrast: #b0b9f1;
+  --accent-lead-surface-alt: #5355a8;
+
+  --accent-lead-container-enabled: #5355a8;
+  --accent-lead-container-hover: #3a3990;
+  --accent-lead-container-active: #45469f;
+  --accent-lead-container-contrast: #d9ddf5;
+  --accent-lead-container-alt: #8f98df;
+
+  /* Success */
+  --accent-success-enabled: #3ecb7f;
+  --accent-success-hover: #30bb6f;
+  --accent-success-active: #279b5c;
+  --accent-success-contrast: #071b0f;
+  --accent-success-alt: #215335;
+
+  --accent-success-surface-enabled: #0b2515;
+  --accent-success-surface-hover: #09311b;
+  --accent-success-surface-active: #134227;
+  --accent-success-surface-contrast: #70e1a4;
+  --accent-success-surface-alt: #268751;
+
+  --accent-success-container-enabled: #268751;
+  --accent-success-container-hover: #134227;
+  --accent-success-container-active: #215335;
+  --accent-success-container-contrast: #9de7b7;
+  --accent-success-container-alt: #58cf8f;
+
+  /* Info */
+  --accent-info-enabled: #6b86f0;
+  --accent-info-hover: #5770db;
+  --accent-info-active: #485fc8;
+  --accent-info-contrast: #091235;
+  --accent-info-alt: #2d3d92;
+
+  --accent-info-surface-enabled: #111a47;
+  --accent-info-surface-hover: #17215c;
+  --accent-info-surface-active: #212e77;
+  --accent-info-surface-contrast: #a6bbfc;
+  --accent-info-surface-alt: #3d52b6;
+
+  --accent-info-container-enabled: #3d52b6;
+  --accent-info-container-hover: #212e77;
+  --accent-info-container-active: #2d3d92;
+  --accent-info-container-contrast: #d2ddfd;
+  --accent-info-container-alt: #7d98f8;
+
+  /* Warning */
+  --accent-warning-enabled: #eb8b1e;
+  --accent-warning-hover: #e0820f;
+  --accent-warning-active: #c8770f;
+  --accent-warning-contrast: #270e00;
+  --accent-warning-alt: #7d480d;
+
+  --accent-warning-surface-enabled: #341600;
+  --accent-warning-surface-hover: #411f00;
+  --accent-warning-surface-active: #532d05;
+  --accent-warning-surface-contrast: #ffa56c;
+  --accent-warning-surface-alt: #af6a18;
+
+  --accent-warning-container-enabled: #af6a18;
+  --accent-warning-container-hover: #532d05;
+  --accent-warning-container-active: #7d480d;
+  --accent-warning-container-contrast: #fdd5bd;
+  --accent-warning-container-alt: #ec9241;
+
+  /* Error */
+  --accent-error-enabled: #f14d51;
+  --accent-error-hover: #dd2537;
+  --accent-error-active: #c80027;
+  --accent-error-contrast: #22100f;
+  --accent-error-alt: #7f2024;
+
+  --accent-error-surface-enabled: #321615;
+  --accent-error-surface-hover: #471616;
+  --accent-error-surface-active: #621d1e;
+  --accent-error-surface-contrast: #faa39e;
+  --accent-error-surface-alt: #b00823;
+
+  --accent-error-container-enabled: #b00823;
+  --accent-error-container-hover: #621d1e;
+  --accent-error-container-active: #7f2024;
+  --accent-error-container-contrast: #fbd3d0;
+  --accent-error-container-alt: #f66c6a;
+
+  /* Neutral */
+  --accent-neutral-enabled: #f3f4f6;
+  --accent-neutral-hover: #dadadd;
+  --accent-neutral-active: #868998;
+  --accent-neutral-contrast: #010107;
+  --accent-neutral-alt: #333747;
+
+  --accent-neutral-surface-enabled: #0f101a;
+  --accent-neutral-surface-hover: #14161f;
+  --accent-neutral-surface-active: #191b24;
+  --accent-neutral-surface-contrast: #e9e9ec;
+  --accent-neutral-surface-alt: #575c75;
+
+  --accent-neutral-container-enabled: #333747;
+  --accent-neutral-container-hover: #45495f;
+  --accent-neutral-container-active: #575c75;
+  --accent-neutral-container-contrast: #e9e9ec;
+  --accent-neutral-container-alt: #dadadd;
+
+  /* Тени */
+  --shadow-base: rgba(0, 0, 0, 0.32);
+  --shadow-blur: rgba(0, 0, 0, 0.16);
+  --shadow-lowest: 0 1px 1px 0 rgba(0, 0, 0, 0.48), 0 1px 2px 0 rgba(0, 0, 0, 0.32);
+  --shadow-low: 0 4px 16px 0 rgba(0, 0, 0, 0.48), 0 2px 6px 0 rgba(0, 0, 0, 0.32);
+  --shadow-mid: 0 12px 48px 0 rgba(0, 0, 0, 0.48), 2px 4px 12px 0 rgba(0, 0, 0, 0.32);
+  --shadow-high: 0 20px 64px 0 rgba(0, 0, 0, 0.48), 2px 8px 20px 0 rgba(0, 0, 0, 0.32);
+  --shadow-highest: 0 32px 96px 0 rgba(0, 0, 0, 0.48), 4px 16px 32px 0 rgba(0, 0, 0, 0.32);
+
+  /* Оверлеи */
+  --overlay-primary: rgba(0, 0, 0, 0.4);
+  --overlay-secondary: rgba(0, 0, 0, 0.32);
+  --overlay-blur: rgba(0, 0, 0, 0.12);
+}
+
+/* ===== ПРИМЕРЫ ИСПОЛЬЗОВАНИЯ ===== */
+
+/*
+Использование базовых цветов:
+.text-primary { color: var(--fg-primary); }
+.bg-surface { background-color: var(--surface-mid); }
+
+Использование акцентных цветов:
+.btn-primary { 
+  background-color: var(--accent-lead-enabled);
+  color: var(--accent-lead-contrast);
+}
+.btn-primary:hover { 
+  background-color: var(--accent-lead-hover);
+}
+
+Использование теней:
+.card { box-shadow: var(--shadow-low); }
+
+Переключение темы:
+document.documentElement.setAttribute('data-theme', 'dark');
+
+Преимущества этой версии:
+- Не требует поддержки color-mix() (работает в старых браузерах)
+- Прямые значения цветов
+- Все rgba() значения предвычислены
+*/

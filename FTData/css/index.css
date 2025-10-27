@@ -1,0 +1,12 @@
+/**
+ * index.css
+ */
+
+/* 1. Базовые токены */
+@import './opacity.css';
+@import './palette.css';
+@import './breakpoints.css';
+
+/* 2. Семантические переменные */
+@import './colors.css';
+@import './typography.css';

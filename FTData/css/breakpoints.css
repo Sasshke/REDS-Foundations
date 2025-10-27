@@ -1,0 +1,15 @@
+/**
+ * breakpoints.css — брейкпоинты дизайн-системы
+ * 
+ * Базируется на структуре breakpoints.ts
+ * Содержит переменные для адаптивного дизайна
+ */
+
+:root {
+  /* ===== БРЕЙКПОИНТЫ ===== */
+  --breakpoint-mobile: 360px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1440px;
+  --breakpoint-inf: 9999px;
+}
